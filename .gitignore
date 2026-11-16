@@ -1,0 +1,150 @@
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+*.secret
+*.secrets
+secrets.*
+credentials
+credentials.*
+!credentials.example
+
+# ==========================================
+# Private Keys & Certificates
+# ==========================================
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.jks
+*.keystore
+
+# ==========================================
+# Kubernetes Credentials
+# ==========================================
+.kube/
+.kubeconfig
+kubeconfig
+kubeconfig.*
+*.kubeconfig
+admin.conf
+client.conf
+
+# ==========================================
+# Docker Credentials
+# ==========================================
+.docker/
+.dockerconfigjson
+
+# ==========================================
+# Terraform State & Local Data
+# ==========================================
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+!*.tfvars.json.example
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Keep dependency lock files trackable.
+!.terraform.lock.hcl
+
+# ==========================================
+# Kubernetes & Helm Local Artifacts
+# ==========================================
+*.tgz
+
+# ==========================================
+# Trivy & Security Scan Artifacts
+# ==========================================
+trivy-cache/
+.trivy-cache/
+trivy-report.json
+trivy-report.sarif
+security-report.json
+security-report.sarif
+
+# ==========================================
+# Generated Reports & Temporary Files
+# ==========================================
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# ==========================================
+# Python
+# ==========================================
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+ENV/
+
+# ==========================================
+# Node.js
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ==========================================
+# Go
+# ==========================================
+*.test
+*.out
+vendor/
+
+# ==========================================
+# Docker & Container Tools
+# ==========================================
+.docker-build/
+docker-compose.override.yml
+
+# ==========================================
+# Logs
+# ==========================================
+*.log
+logs/
+
+# ==========================================
+# Operating System
+# ==========================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# Editors & IDEs
+# ==========================================
+.vscode/
+.idea/
+*.iml
+
+# ==========================================
+# Local Kubernetes Tools
+# ==========================================
+.minikube/
+.kind/
